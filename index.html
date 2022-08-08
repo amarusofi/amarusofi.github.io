@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sofia Amarù | Portfolio</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <style media="screen">
+
+      body {
+        font-family: 'Roboto', sans-serif;
+      }
+
+      .modal-content {
+        min-height: 450px;
+        background-color: transparent;
+      }
+
+      .nav-tabs .nav-link {
+        color: white;
+        font-weight: bold;
+      }
+
+      .card-title {
+        font-weight: bold;
+      }
+
+    </style>
+  </head>
+
+  <body class="bg-dark">
+
+    <!-- begin navbar -->
+    <nav class="navbar p-5 navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fs-3 bi bi-list"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbar">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#resume">Curriculum</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contactMe">Contatti</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- end navbar -->
+
+
+    <div class="container">
+
+      <!-- begin jumbotron -->
+      <div class="p-5 mb-5 text-bg-dark border rounded-3" style="background: url(public/profile_img_cropped_3.png) no-repeat; background-position: right bottom; background-size: contain;">
+        <div class="container-fluid py-5">
+          <h1 class="display-5 fw-bold">Sofia Amarù</h1>
+          <p class="col-md-7 fs-4 pb-5">Studentessa di Informatica presso l'Università di Milano-Bicocca</p>
+
+          <!-- resume download button-->
+          <button class="btn btn-outline-light btn-lg" type="button" onclick="window.open('public/resume.pdf')"><i class="bi bi-file-earmark-arrow-down-fill"></i> Download CV</button>
+        </div>
+      </div>
+      <!-- end jumbotron -->
+
+      <div data-bs-spy="scroll" data-bs-target="#navbar" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy text-light bg-dark p-3 rounded-2" tabindex="0">
+
+        <h1 id="portfolio" class="display-5 text-center p-3">Portfolio</h1>
+
+        <!-- begin card group -->
+        <div class="container-fluid mb-5">
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+
+            <div class="col d-flex"> <!-- TODO add align-item-stretch ? -->
+              <div class="card text-bg-dark mb-3 mx-auto">
+                <img src="https://github.com/amarusofi/Progetto-Informatica-Grafica/blob/main/Immagini%20del%20modello/parabola.png?raw=true" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Progetto di Informatica Grafica</h5>
+                  <p class="card-text pt-2">Modello 3D di un oggetto volante non identificato. Progetto per il corso di Informatica Grafica dell'Università degli Studi di Milano-Bicocca.</p>
+                  <a href="https://github.com/amarusofi/Progetto-Informatica-Grafica" class="stretched-link"></a>
+                </div>
+                <div class="container text-muted ps-3 pb-3 small">set 2020</div>
+              </div>
+            </div>
+
+            <div class="col d-flex">
+              <div class="card text-bg-dark mb-3 mx-auto">
+                <img src="https://github.com/amarusofi/Progetto-Elaborazione-Immagini/raw/main/img/00.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Progetto di Elaborazione delle Immagini</h5>
+                  <p class="card-text pt-2">Progetto d'esame per il corso di Elaborazione delle Immagini dell'Università di Milano-Bicocca.</p>
+                  <a href="https://github.com/amarusofi/Progetto-Elaborazione-Immagini" class="stretched-link"></a>
+                </div>
+                <div class="container text-muted ps-3 pb-3 small">feb 2021</div>
+              </div>
+            </div>
+
+            <div class="col d-flex">
+              <div class="card text-bg-dark mb-3 mx-auto">
+                <img src="https://github.com/amarusofi/Progetto-Interazione-Uomo-Macchina/blob/main/extract.gif?raw=true" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Progetto di Interazione Uomo-Macchina</h5>
+                  <p class="card-text pt-2">Valutazione longitudinale di usabilità dell'applicazione Movyes. Progetto d'esame per il corso di Interazione Uomo-Macchina dell'Università di Milano-Bicocca.</p>
+                  <a href="https://github.com/amarusofi/Progetto-Interazione-Uomo-Macchina" class="stretched-link"></a>
+                </div>
+                <div class="container text-muted ps-3 pb-3 small">lug 2020</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!-- end card group-->
+
+        <h1 id="resume" class="display-5 text-center p-3">Curriculum</h1>
+
+        <div class="container">
+          <div class="container mb-4 text-end">
+            <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#marksModal">Voti esami universitari</button>
+          </div>
+
+          <!-- begin resume -->
+          <div class="container mb-5">
+            <dl class="row">
+              <dt class="col-sm-3 text-end">2017 - in corso</dt>
+              <dd class="col-sm-9">Laurea triennale in Informatica presso Università degli Studi di Milano-Bicocca</dd>
+
+              <dt class="col-sm-3 text-end">set - nov 2019</dt>
+              <dd class="col-sm-9">Programmatore junior presso Gruppo Euris</dd>
+
+              <dt class="col-sm-3 text-end">2019</dt>
+              <dd class="col-sm-9">Corso di formazione <em>Tecniche di programmazione Java</em> finalizzato all'assunzione, presso UMANA</dd>
+
+              <dt class="col-sm-3 text-end">2011 - 2017</dt>
+              <dd class="col-sm-9"> Liceo classico</dd>
+            </dl>
+          </div>
+          <!-- end resume -->
+
+        </div>
+
+
+        <h1 id="contactMe" class="display-5 text-center p-3">Contatti</h1>
+
+        <div class="container mb-5 w-75 text-center">
+          <div class="row justify-content-center">
+
+            <div class="col-3">
+              <a class="btn btn-dark btn-lg rounded-pill fs-1 bi bi-github" href="https://github.com/amarusofi" role="button"></a>
+            </div>
+
+            <div class="col-3">
+              <a class="btn btn-dark btn-lg rounded-pill fs-1 bi bi-linkedin" href="https://www.linkedin.com/in/amarusofia/" role="button"></a>
+            </div>
+
+            <div class="col-3">
+              <a class="btn btn-dark btn-lg rounded-pill fs-1 bi bi-telegram" href="https://t.me/amarusofia" role="button"></a>
+            </div>
+
+            <div class="col-3">
+              <a class="btn btn-dark btn-lg rounded-pill fs-1 bi bi-envelope-fill" role="button" tabindex="0" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="focus" data-bs-html="true" data-bs-content="sofia.amaru@gmail.com <br/> s.amaru@campus.unimib.it"></a>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- begin marks modal -->
+        <div class="modal fade" id="marksModal" tabindex="-1" aria-labelledby="markseModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+                <div class="card text-center bg-dark">
+
+                  <div class="card-header">
+                    <div class="nav nav-tabs card-header-tabs" id="nav-tab" role="tablist">
+                      <button class="nav-link" id="nav-first-tab" data-bs-toggle="tab" data-bs-target="#nav-first" type="button" role="tab" aria-controls="nav-first" aria-selected="false">1° anno</button>
+                      <button class="nav-link" id="nav-second-tab" data-bs-toggle="tab" data-bs-target="#nav-second" type="button" role="tab" aria-controls="nav-second" aria-selected="false">2° anno</button>
+                      <button class="nav-link active" id="nav-third-tab" data-bs-toggle="tab" data-bs-target="#nav-third" type="button" role="tab" aria-controls="nav-third" aria-selected="true">3° anno</button>
+                    </div>
+                  </div>
+
+                  <div class="card-body pt-3 tab-content">
+
+                    <!-- begin 1st year -->
+                    <div class="tab-pane fade" id="nav-first" role="tabpanel" aria-labelledby="nav-first-tab" tabindex="0">
+
+                      <div class="container text-center pt-3">
+                        <div class="row">
+                          <div class="col-10 text-start">
+                            <p>Algebra lineare e geometria</p>
+                            <p>Algoritmi e strutture dati</p>
+                            <!--p>Analisi matematica</p-->
+                            <p>Architettura degli elaboratori</p>
+                            <p>Fondamenti dell'informatica</p>
+                            <p>Programmazione 1</p>
+                            <p>Programmazione 2</p>
+                          </div>
+
+                          <div class="col-2 text-end">
+                            <p>18</p>
+                            <p>23</p>
+                            <!-- add mark -->
+                            <p>20</p>
+                            <p>20</p>
+                            <p>25</p>
+                            <p>26</p>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                    <!-- end 1st year -->
+
+                    <!-- begin 2nd year -->
+                    <div class="tab-pane fade" id="nav-second" role="tabpanel" aria-labelledby="nav-second-tab" tabindex="0">
+
+                      <div class="container text-center pt-3">
+                        <div class="row">
+                          <div class="col-10 text-start">
+                            <p>Analisi e progettazione del software</p>
+                            <p>Basi di dati</p>
+                            <p>Fisica</p>
+                            <p>Linguaggi di programmazione</p>
+                            <p>Linguaggi e computabibeginlità</p>
+                            <p>Probabilità e statistica per l'informatica</p>
+                            <p>Reti e sistemi operativi</p>
+                            <p>Sistemi distribuiti</p>
+                          </div>
+
+                          <div class="col-2 text-end">
+                            <p>27</p>
+                            <p>25</p>
+                            <p>30</p>
+                            <p>29</p>
+                            <p>27</p>
+                            <p>26</p>
+                            <p>22</p>
+                            <p>25</p>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                    <!-- end 2nd year -->
+
+                    <!-- begin 3rd year -->
+                    <div class="tab-pane fade show active" id="nav-third" role="tabpanel" aria-labelledby="nav-third-tab" tabindex="0">
+
+                      <div class="container text-center pt-3">
+                        <div class="row">
+                          <div class="col-10 text-start">
+                            <p>Analisi e progetto di algoritmi</p>
+                            <p>Elaborazione delle immagini</p>
+                            <p>Informatica grafica</p>
+                            <p>Interazione uomo-macchina</p>
+                            <p>Ricerca operativa e pianificazione delle risorse</p>
+                          </div>
+
+                          <div class="col-2 text-end">
+                            <p>30</p>
+                            <p>30</p>
+                            <p>30</p>
+                            <p>30L</p>
+                            <p>20</p>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                    <!-- end 3rd year -->
+
+                  </div>
+                </div>
+
+            </div>
+          </div>
+        </div>
+        <!-- end marks modal -->
+
+      </div>
+    </div>
+
+    <script type="module" src="./js/main.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+
+    <script>
+      const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+      const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+      const popover = new bootstrap.Popover('.popover-dismiss', {
+        trigger: 'focus'
+      })
+    </script>
+
+  </body>
+</html>
