@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -31,13 +31,21 @@
         font-weight: bold;
       }
 
+      a.anchor {
+        display: block;
+        position: relative;
+        top: -100px;
+        visibility: hidden;
+      }
+
     </style>
+
   </head>
 
   <body class="bg-dark">
 
     <!-- begin navbar -->
-    <nav class="navbar p-5 navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <nav class="navbar p-4 mb-5 border-bottom border-secondary navbar-expand-md navbar-dark bg-dark sticky-top">
       <div class="container">
         <a class="navbar-brand" href="#"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,21 +53,20 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbar">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
-            <li class="nav-item"><a class="nav-link" href="#resume">Curriculum</a></li>
-            <li class="nav-item"><a class="nav-link" href="#contactMe">Contatti</a></li>
-          </ul>
+          <div class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <a class="nav-link" href="#portfolio">Portfolio</a>
+            <a class="nav-link" href="#resume">Curriculum</a>
+            <a class="nav-link" href="#contactMe">Contatti</a>
+          </div>
         </div>
       </div>
     </nav>
     <!-- end navbar -->
 
-
     <div class="container">
 
       <!-- begin jumbotron -->
-      <div class="p-5 mb-5 text-bg-dark border rounded-3" style="background: url(public/profile_img_cropped_3.png) no-repeat; background-position: right bottom; background-size: contain;">
+      <div class="p-5 mb-5 text-bg-dark border rounded-3" style="background: url(public/profile_img.png) no-repeat; background-position: right bottom; background-size: contain;">
         <div class="container-fluid py-5">
           <h1 class="display-5 fw-bold">Sofia Amarù</h1>
           <p class="col-md-7 fs-4 pb-5">Studentessa di Informatica presso l'Università di Milano-Bicocca</p>
@@ -70,15 +77,16 @@
       </div>
       <!-- end jumbotron -->
 
-      <div data-bs-spy="scroll" data-bs-target="#navbar" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy text-light bg-dark p-3 rounded-2" tabindex="0">
+      <div class="container text-light bg-dark p-3 rounded-2">
 
-        <h1 id="portfolio" class="display-5 text-center p-3">Portfolio</h1>
+        <a id="portfolio" class="anchor"></a>
+        <h1 class="display-5 text-center p-3">Portfolio</h1>
 
         <!-- begin card group -->
         <div class="container-fluid mb-5">
           <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
 
-            <div class="col d-flex"> <!-- TODO add align-item-stretch ? -->
+            <div class="col d-flex">
               <div class="card text-bg-dark mb-3 mx-auto">
                 <img src="https://github.com/amarusofi/Progetto-Informatica-Grafica/blob/main/Immagini%20del%20modello/parabola.png?raw=true" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -118,55 +126,42 @@
         </div>
         <!-- end card group-->
 
-        <h1 id="resume" class="display-5 text-center p-3">Curriculum</h1>
+        <a id="resume" class="anchor"></a>
 
-        <div class="container">
-          <div class="container mb-4 text-end">
-            <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#marksModal">Voti esami universitari</button>
-          </div>
+        <h1 class="display-5 text-center p-3">Curriculum</h1>
 
-          <!-- begin resume -->
-          <div class="container mb-5">
-            <dl class="row">
-              <dt class="col-sm-3 text-end">2017 - in corso</dt>
-              <dd class="col-sm-9">Laurea triennale in Informatica presso Università degli Studi di Milano-Bicocca</dd>
-
-              <dt class="col-sm-3 text-end">set - nov 2019</dt>
-              <dd class="col-sm-9">Programmatore junior presso Gruppo Euris</dd>
-
-              <dt class="col-sm-3 text-end">2019</dt>
-              <dd class="col-sm-9">Corso di formazione <em>Tecniche di programmazione Java</em> finalizzato all'assunzione, presso UMANA</dd>
-
-              <dt class="col-sm-3 text-end">2011 - 2017</dt>
-              <dd class="col-sm-9"> Liceo classico</dd>
-            </dl>
-          </div>
-          <!-- end resume -->
-
+        <div class="container mb-4 text-end">
+          <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#marksModal">Voti esami universitari</button>
         </div>
 
+        <!-- begin resume -->
+        <div class="container mb-5">
+          <dl class="row">
+            <dt class="col-sm-3 text-end">2017 - in corso</dt>
+            <dd class="col-sm-9">Laurea triennale in Informatica presso Università degli Studi di Milano-Bicocca</dd>
 
-        <h1 id="contactMe" class="display-5 text-center p-3">Contatti</h1>
+            <dt class="col-sm-3 text-end">set - nov 2019</dt>
+            <dd class="col-sm-9">Programmatore junior presso Gruppo Euris</dd>
 
-        <div class="container mb-5 w-75 text-center">
-          <div class="row justify-content-center">
+            <dt class="col-sm-3 text-end">2019</dt>
+            <dd class="col-sm-9">Corso di formazione <em>Tecniche di programmazione Java</em> finalizzato all'assunzione, presso UMANA</dd>
 
-            <div class="col-3">
-              <a class="btn btn-dark btn-lg rounded-pill fs-1 bi bi-github" href="https://github.com/amarusofi" role="button"></a>
-            </div>
+            <dt class="col-sm-3 text-end">2011 - 2017</dt>
+            <dd class="col-sm-9"> Liceo classico</dd>
+          </dl>
+        </div>
+        <!-- end resume -->
 
-            <div class="col-3">
-              <a class="btn btn-dark btn-lg rounded-pill fs-1 bi bi-linkedin" href="https://www.linkedin.com/in/amarusofia/" role="button"></a>
-            </div>
+        <a id="contactMe" class="anchor"></a>
 
-            <div class="col-3">
-              <a class="btn btn-dark btn-lg rounded-pill fs-1 bi bi-telegram" href="https://t.me/amarusofia" role="button"></a>
-            </div>
+        <h1 class="display-5 text-center p-3">Contatti</h1>
 
-            <div class="col-3">
-              <a class="btn btn-dark btn-lg rounded-pill fs-1 bi bi-envelope-fill" role="button" tabindex="0" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="focus" data-bs-html="true" data-bs-content="sofia.amaru@gmail.com <br/> s.amaru@campus.unimib.it"></a>
-            </div>
-
+        <div class="container text-center mb-5">
+          <div class="btn-group btn-group-lg" role="group" aria-label="Large button group">
+            <a type="button" class="btn btn-dark rounded-pill mx-2 fs-1 bi bi-github" href="https://github.com/amarusofi"></a>
+            <a type="button" class="btn btn-dark rounded-pill mx-2 fs-1 bi bi-linkedin" href="https://www.linkedin.com/in/amarusofia/"></a>
+            <a type="button" class="btn btn-dark rounded-pill mx-2 fs-1 bi bi-telegram" href="https://t.me/amarusofia"></a>
+            <a type="button" class="btn btn-dark rounded-pill mx-2 fs-1 bi bi-envelope-fill" tabindex="0" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="focus" data-bs-html="true" data-bs-content="sofia.amaru@gmail.com <br/> s.amaru@campus.unimib.it"></a>
           </div>
         </div>
 
@@ -297,6 +292,15 @@
       const popover = new bootstrap.Popover('.popover-dismiss', {
         trigger: 'focus'
       })
+    </script>
+
+    <script>
+    const navLinks = document.querySelectorAll('.nav-link')
+    const menuToggle = document.getElementById('navbar')
+    const bsCollapse = new bootstrap.Collapse(menuToggle)
+    navLinks.forEach((l) => {
+      l.addEventListener('click', () => { bsCollapse.toggle() })
+    })
     </script>
 
   </body>
